@@ -25,6 +25,7 @@ try {
       '--example',
       'frontend-contract',
       '--locked',
+      ...(process.platform === 'win32' ? ['--features', 'clippy'] : []),
       '-q',
       ...(check ? ['--', output] : []),
     ],

@@ -4,6 +4,15 @@ import { invoke as __TAURI_INVOKE, Channel } from '@tauri-apps/api/core'
 
 /** Commands */
 export const commands = {
+  listBunPlugins: () => __TAURI_INVOKE<JsonValue>('list_bun_plugins'),
+  setBunPluginEnabled: (id: string, enabled: boolean) =>
+    __TAURI_INVOKE<null>('set_bun_plugin_enabled', { id, enabled }),
+  installBunPlugin: (directory: string) =>
+    __TAURI_INVOKE<null>('install_bun_plugin', { directory }),
+  removeBunPlugin: (id: string) =>
+    __TAURI_INVOKE<null>('remove_bun_plugin', { id }),
+  bunPluginCommand: (id: string, command: string) =>
+    __TAURI_INVOKE<null>('bun_plugin_command', { id, command }),
   getSystemInfo: () => __TAURI_INVOKE<SystemInfo>('get_system_info'),
   /**  获取应用的运行时间（毫秒） */
   getAppUptime: () => __TAURI_INVOKE<number>('get_app_uptime'),

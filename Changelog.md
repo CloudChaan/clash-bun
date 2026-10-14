@@ -15,6 +15,8 @@
 <details>
 <summary><strong> ✨ 新增功能 </strong></summary>
 
+- 新增 Clash Bun 本地插件管理，支持随应用运行、停用和独立看板
+- 新增七天节点稳定性插件，支持美国、香港、台湾稳定自动选择和本机可达性看板
 
 </details>
 

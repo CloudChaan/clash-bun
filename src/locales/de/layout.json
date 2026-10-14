@@ -2,6 +2,7 @@
   "components": {
     "navigation": {
       "tabs": {
+        "plugins": "Plugins",
         "home": "Startseite",
         "proxies": "Proxy",
         "profiles": "Abonnement",

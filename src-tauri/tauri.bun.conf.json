@@ -1,0 +1,14 @@
+{
+  "productName": "Clash Bun",
+  "identifier": "io.github.cloudchaan.clash-bun.dev",
+  "bundle": {
+    "active": false,
+    "createUpdaterArtifacts": false,
+    "publisher": "CloudChaan",
+    "shortDescription": "Clash Bun",
+    "longDescription": "Clash Bun with lifecycle-managed plugins"
+  },
+  "plugins": {
+    "updater": { "endpoints": [] }
+  }
+}

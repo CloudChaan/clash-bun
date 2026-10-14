@@ -30,6 +30,15 @@ export type {
   UnlockItem,
 } from './bindings'
 
+export const listBunPlugins = () => commands.listBunPlugins()
+export const setBunPluginEnabled = (id: string, enabled: boolean) =>
+  commands.setBunPluginEnabled(id, enabled)
+export const installBunPlugin = (directory: string) =>
+  commands.installBunPlugin(directory)
+export const removeBunPlugin = (id: string) => commands.removeBunPlugin(id)
+export const bunPluginCommand = (id: string, command: string) =>
+  commands.bunPluginCommand(id, command)
+
 export async function copyClashEnv() {
   return commands.copyClashEnv()
 }

@@ -112,6 +112,7 @@ export const translationKeys = [
   'home.components.clashMode.descriptions.rule',
   'home.components.clashMode.descriptions.global',
   'home.components.clashMode.descriptions.direct',
+  'layout.components.navigation.tabs.plugins',
   'layout.components.navigation.tabs.home',
   'layout.components.navigation.tabs.proxies',
   'layout.components.navigation.tabs.profiles',

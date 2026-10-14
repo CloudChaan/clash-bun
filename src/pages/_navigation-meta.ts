@@ -1,4 +1,8 @@
 export const navigationItems = {
+  plugins: {
+    label: 'layout.components.navigation.tabs.plugins',
+    path: '/plugins',
+  },
   home: { label: 'layout.components.navigation.tabs.home', path: '/' },
   proxies: {
     label: 'layout.components.navigation.tabs.proxies',
