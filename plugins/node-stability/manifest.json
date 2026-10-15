@@ -1,0 +1,20 @@
+{
+  "id": "node-stability",
+  "name": "Node Stability",
+  "version": "0.1.0",
+  "apiVersion": 1,
+  "description": "Seven-day local reachability, regional stable selection, and a stability dashboard.",
+  "license": "GPL-3.0-only",
+  "entry": "main.js",
+  "dashboard": "dashboard.html",
+  "commands": [{ "id": "test-now", "label": "立即测试" }],
+  "intervalSeconds": 30,
+  "capabilities": [
+    "config:transform",
+    "proxies:read",
+    "proxies:test",
+    "proxies:select",
+    "storage",
+    "dashboard"
+  ]
+}

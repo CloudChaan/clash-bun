@@ -2,6 +2,7 @@
   "components": {
     "navigation": {
       "tabs": {
+        "plugins": "Plugins",
         "home": "Ana Sayfa",
         "proxies": "Vekil'ler",
         "profiles": "Profiller",

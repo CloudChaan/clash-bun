@@ -3,6 +3,9 @@
   "version": "2.5.9",
   "license": "GPL-3.0-only",
   "scripts": {
+    "bun:dev": "tauri dev --config src-tauri/tauri.bun.conf.json --features bun-app,dev-sidecar",
+    "bun:build": "tauri build --debug --no-bundle --config src-tauri/tauri.bun.conf.json --features bun-app,dev-sidecar",
+    "test:plugins": "node --test plugins/node-stability/plugin.test.mjs",
     "prepare": "husky || true",
     "dev": "node scripts/dev.mjs dev",
     "dev:service": "node scripts/dev.mjs service",

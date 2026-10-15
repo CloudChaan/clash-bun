@@ -208,6 +208,7 @@ export interface TranslationResources {
             connections: string
             home: string
             logs: string
+            plugins: string
             profiles: string
             proxies: string
             rules: string

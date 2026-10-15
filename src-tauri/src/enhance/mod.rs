@@ -957,6 +957,7 @@ pub async fn enhance(
     )
     .await;
 
+    let config = crate::bun_plugins::transform(config).await;
     notify_discarded_keys(authoritative.overridden(&authoritative, &authoritative.current(&config)));
     let config = authoritative.enforce(config);
     let config = ensure_lan_bind_address(config);

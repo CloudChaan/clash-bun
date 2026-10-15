@@ -1,4 +1,5 @@
 import DnsOutlinedIcon from '@mui/icons-material/DnsOutlined'
+import ExtensionOutlinedIcon from '@mui/icons-material/ExtensionOutlined'
 import ForkRightOutlinedIcon from '@mui/icons-material/ForkRightOutlined'
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined'
 import LanguageOutlinedIcon from '@mui/icons-material/LanguageOutlined'
@@ -21,6 +22,7 @@ import { navigationItems } from './_navigation-meta'
 import ConnectionsPage from './connections'
 import HomePage from './home'
 import LogsPage from './logs'
+import PluginsPage from './plugins'
 import ProfilePage from './profiles'
 import ProxyPage from './proxies'
 import RulesPage from './rules'
@@ -35,6 +37,14 @@ type NavigationItem = {
 }
 
 export const navItems: NavigationItem[] = [
+  {
+    ...navigationItems.plugins,
+    icon: [
+      <ExtensionOutlinedIcon key="mui" />,
+      <ExtensionOutlinedIcon key="svg" />,
+    ],
+    Component: PluginsPage,
+  },
   {
     ...navigationItems.home,
     icon: [<HomeOutlinedIcon key="mui" />, <HomeSvg key="svg" />],

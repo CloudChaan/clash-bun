@@ -132,6 +132,8 @@ export default defineConfig([
             'tests/*.ts',
             'src/polyfills/*.js',
             'tests/*.mjs',
+            'plugins/*/*.js',
+            'plugins/*/*.mjs',
           ],
         },
       },
@@ -236,6 +238,19 @@ export default defineConfig([
         ...globals.browser,
         ...globals.node,
       },
+    },
+  },
+  {
+    files: ['plugins/*/*.{js,mjs}'],
+    languageOptions: {
+      globals: globals.node,
+    },
+    rules: {
+      'no-var': 'off',
+      'unused-imports/no-unused-vars': [
+        'error',
+        { varsIgnorePattern: '^bunPlugin$' },
+      ],
     },
   },
   {

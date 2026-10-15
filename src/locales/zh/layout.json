@@ -2,6 +2,7 @@
   "components": {
     "navigation": {
       "tabs": {
+        "plugins": "插件",
         "home": "首 页",
         "proxies": "代 理",
         "profiles": "订 阅",
